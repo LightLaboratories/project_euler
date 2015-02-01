@@ -8,16 +8,19 @@
 # By considering the terms in the Fibonacci sequence whose values do not
 # exceed four million, find the sum of the even-valued terms.
 
-def fib(x)
+def fibeven(x)
   sum = 0
   a = 1
   b = 2
 
   while (b < x)
-    a, b = b, a + b
+    if (x % 2 == 0)
+      sum += b
+    end
+    a,b = b, a+b
   end
 
-  return b
+  return sum
 end
 
-p fib(100)
+p fibeven(10)
