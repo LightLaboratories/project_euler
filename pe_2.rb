@@ -10,22 +10,24 @@
 
 first = 0
 second = 1
-i = 0
-
+sum = 0
 array = []
 
-while i <= 4000000
-  i = first + second
-  if i%2 == 0
-    array << i
+while sum <= 4000000 do
+  sum = first + second
+
+  if sum%2 == 0
+    array << sum
   end
+
   first = second
-  second = i
+  second = sum
 end
 
-if i <= array.last
-  array.pop
+total = 0
+
+array.each do |i|
+  total = total + i
 end
 
-total = array.inject(:+)
 p total
