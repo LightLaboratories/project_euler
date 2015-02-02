@@ -8,7 +8,7 @@ end
 
 def merge(left, right)
   sorted = []
-  until left.empty? or right.empty?
+  until left.empty? || right.empty?
     if left.first <= right.first
       sorted << left.shift
     else
@@ -17,7 +17,6 @@ def merge(left, right)
   end
   sorted.concat(left).concat(right)
 end
-
 
 array = [1, 54, 12, 393, 23, 65, 22, 11, 76, 543]
 p sort(array)
