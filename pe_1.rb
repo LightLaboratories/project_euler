@@ -5,9 +5,14 @@
 
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-x = 1
 sum = 0
+i = 1
 
-10.times do |i|
-  
+until i == 1000
+  if i%3 == 0 or i%5 == 0
+    sum += i
+  end
+  i += i+1
 end
+
+p "The sum of all of the numbers is #{sum}"
