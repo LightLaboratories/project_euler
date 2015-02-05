@@ -18,5 +18,5 @@ def merge(left, right)
   sorted.concat(left).concat(right)
 end
 
-array = [1, 54, 12, 393, 23, 65, 22, 11, 76, 543]
+array = [1, 54, 12, 23, 65, 22, 11, 76, 543]
 p sort(array)
